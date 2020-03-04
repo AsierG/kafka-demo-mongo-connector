@@ -1,0 +1,12 @@
+{"name": "mongo-source-des-pru",
+  "config": {
+    "tasks.max":"1",
+    "connector.class":"com.mongodb.kafka.connect.MongoSourceConnector",
+    "value.converter":"org.apache.kafka.connect.json.JsonConverter",
+    "value.converter.schemas.enable":"true",
+    "connection.uri":"",
+    "change.stream.full.document": "updateLookup",
+    "topic.prefix":"mongoT",
+    "database":"ReglasGestorCodigos",
+    "collection":"CatalogoReglasKCPruebas"
+  }}
